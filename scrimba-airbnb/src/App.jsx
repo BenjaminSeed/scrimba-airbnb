@@ -24,14 +24,6 @@ function App() {
       <Navbar />
       <Hero />
       {newData}
-      {/* <Card
-        img={"../src/assets/image 12.png"}
-        rating="5.0"
-        reviewCount={6}
-        location="USA"
-        title="Life Lessons with Katie Zaferes"
-        price={136}
-      /> */}
     </>
   );
 }
