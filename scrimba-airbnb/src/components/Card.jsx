@@ -1,9 +1,15 @@
 import "../styles/Card.css";
 import star from "../assets/Star 1.png";
 
-const Card = ({ info }) => {
-  const { coverImg, rating, reviewCount, location, title, price, openSpots } =
-    info;
+const Card = ({
+  coverImg,
+  stats: { rating, reviewCount },
+  location,
+  title,
+  price,
+  openSpots,
+}) => {
+  console.log(rating, reviewCount);
   let badgeText;
   if (openSpots === 0) {
     badgeText = "SOLD OUT";
