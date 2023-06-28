@@ -19,12 +19,12 @@ const Card = ({
         <span className="grey">({reviewCount}) • </span>
         <span className="grey">{location}</span>
       </div>
-      <p>{title}</p>
+      <p className="card--title">{title}</p>
       <p>
         {" "}
-        <span className="bold">From ${price}</span> / Person
+        <span className="card--price">From ${price}</span> / Person
       </p>
-      <p>Available Spaces: {openSpots}</p>
+      {/* <p>Available Spaces: {openSpots}</p> */}
     </div>
   );
 };

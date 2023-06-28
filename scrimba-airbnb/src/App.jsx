@@ -1,5 +1,6 @@
 import "./App.css";
 import Card from "./components/Card";
+import "../src/styles/Card.css";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import data from "./Data";
@@ -23,7 +24,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      {newData}
+      <section className="cards--list">{newData}</section>
     </>
   );
 }
