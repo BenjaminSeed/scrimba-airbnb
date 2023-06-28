@@ -10,8 +10,16 @@ const Card = ({
   price,
   openSpots,
 }) => {
+  let badgeText;
+  if (openSpots === 0) {
+    badgeText = "SOLD OUT";
+  } else if (location === "Online") {
+    badgeText = "ONLINE";
+  }
+
   return (
     <div className="card">
+      {badgeText && <div className="card--badge">{badgeText}</div>}
       <img src={coverImg} className="card--img" />
       <div className="card--stats">
         <img src={star} alt="" className="card--star" />
@@ -24,7 +32,6 @@ const Card = ({
         {" "}
         <span className="card--price">From ${price}</span> / Person
       </p>
-      {/* <p>Available Spaces: {openSpots}</p> */}
     </div>
   );
 };
