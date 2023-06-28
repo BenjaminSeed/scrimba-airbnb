@@ -16,10 +16,6 @@ This project is a basic clone of an Airbnb page, developed as part of the Scrimb
 - CSS
 - JavaScript
 
-## What it looks like
-
-[alt text](../airbnb/scrimba-airbnb/src/assets/final.png)
-
 ## Getting Started
 
 To run this project locally, follow these steps:
