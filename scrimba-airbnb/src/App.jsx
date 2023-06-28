@@ -7,19 +7,7 @@ import data from "./Data";
 
 function App() {
   const newData = data.map((info) => {
-    return (
-      <Card
-        key={info.id}
-        title={info.title}
-        description={info.description}
-        coverImg={info.coverImg}
-        rating={info.stats.rating}
-        price={info.price}
-        reviewCount={info.stats.reviewCount}
-        location={info.location}
-        openSpots={info.openSpots}
-      />
-    );
+    return <Card key={info.id} info={info} />;
   });
   return (
     <>
